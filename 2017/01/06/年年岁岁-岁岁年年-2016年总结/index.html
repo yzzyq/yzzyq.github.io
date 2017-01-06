@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="yzzyq">
 <meta property="og:description" content="##年年岁岁,岁岁年年(2016年终总结)
 这个博客是我在2016末的时候搭建起来的,之前一直拖着没有搭建,其实我也不知道自己在忙些什么,正好那段时间有空,就搭建了一个,日后什么心得收货的话,可以记录下来,">
-<meta property="og:updated_time" content="2017-01-06T06:49:55.895Z">
+<meta property="og:updated_time" content="2017-01-06T06:57:01.243Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="年年岁岁,岁岁年年(2016年总结)">
 <meta name="twitter:description" content="##年年岁岁,岁岁年年(2016年终总结)
@@ -134,75 +134,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-年年岁岁-岁岁年年-2016年总结" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> <%if(index){%> article-index<%}%>" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
+    <% if (post.link || post.title){ %>
       <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      年年岁岁,岁岁年年(2016年总结)
-    </h1>
-  
-
-        <a href="/2017/01/06/年年岁岁-岁岁年年-2016年总结/" class="archive-article-date">
-  	<time datetime="2017-01-06T06:28:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-06</time>
-</a>
+        <%- partial('post/title', {class_name: 'article-title'}) %>
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
       </header>
-    
+    <% } %>
     <div class="article-entry" itemprop="articleBody">
-      
-         
-        <p>##年年岁岁,岁岁年年(2016年终总结)</p>
-<p>这个博客是我在2016末的时候搭建起来的,之前一直拖着没有搭建,其实我也不知道自己在忙些什么,正好那段时间有空,就搭建了一个,日后什么心得收货的话,可以记录下来,<br><a id="more"></a></p>
-<blockquote>
-<ul>
-<li>代码外功</li>
-<li>原理内功</li>
-<li>心中世界</li>
-<li>在路上</li>
-</ul>
-<hr>
-</blockquote>
-<h2 id="代码外功"><a href="#代码外功" class="headerlink" title="代码外功"></a>代码外功</h2><h3 id="1-java代码"><a href="#1-java代码" class="headerlink" title="1.java代码"></a>1.java代码</h3><p>大一第一学期写的基本上都是java代码,不敢说每天都在写,但是基本上已经差不多了,我不知道我的java水平高低,但是我知道我的java水平确实菜的要命,因而这个学期我才拼命的写java代码.</p>
-<p>java代码中以javaweb写的居多,因为我们这个学期的很多大作业都是和这个有关的,帮同学看代码,还是自己写代码,我感觉我已经看过不少的代码了,即使其中大部分都是重复的,而且代码都是有点混乱的,耦合度非常高的那种代码,但是通过改别人的代码其实也能得到很多东西,代码其实看出一个人的思想,在写这个东西的时候的思想.不过我没看到什么让我惊艳的想法,因而收获很少吧,多的都是那些重复的造轮子,然而毫无意义</p>
-<p>这个学期我基本学完了javaweb的内容了,三大框架我也有所了解,理论基本都是学完了,实践只是做了一个很小的网页,不过依然收获可以,果然学完理论是最好的,将之前的都能复习一遍,其中的很多思想都是让我感觉很稀奇了,Spring的面向切面编程思想,注入思想等等,都让我看到代码原来可以这样写,把那些要改动的都写在xml文件中,让框架来做很多底层的事情,这样达到的低耦合,高内聚的状态</p>
-<h3 id="2-C"><a href="#2-C" class="headerlink" title="2. C++"></a>2. C++</h3><p>C++代码是我大二学期的时候努力想要学习的代码,为此我买了一本C++primer的书来看,但是却没有全部看完，只是看完了基础的部分,但是现在的我估计写不出来那样的代码,写出的代码估计也非常的简单了,估计和C也差不了多少了</p>
-<p>C++代码在我看来就是知识点非常的多,非常的繁琐,写代码的时候条条大路通罗马的感觉,似乎找不到一种最好的方法来实现这种功能,总是有很多的方法.但是我觉得这些方法并不是所有的都有存在的必要的,因而很多人都说C++是最愚笨的.我不敢评价这些东西,因而能评价的都是那些让我仰视的存在了,我也只是看过一篇文章,上面对于C++的评价而已,不过我觉得C++代码能够存在这么长时间,必定有它存在的价值的,不然我估计老早就淘汰了。</p>
-<h3 id="3-汇编"><a href="#3-汇编" class="headerlink" title="3. 汇编"></a>3. 汇编</h3><h2 id="汇编也是我大二学期学习的-那段时间刚学过操作系统，对底层的东西产生了兴趣-之后就学了一段时间的汇编语言-当然看的是王爽老师的汇编原理的书-是很简单的那种-并没有涉及难的方面了。只是16位简单的汇编，不过没有深究-我准备在我研究生的生涯中来学习这些底层非常基础的东西，现在先把那些基础都打好再说吧"><a href="#汇编也是我大二学期学习的-那段时间刚学过操作系统，对底层的东西产生了兴趣-之后就学了一段时间的汇编语言-当然看的是王爽老师的汇编原理的书-是很简单的那种-并没有涉及难的方面了。只是16位简单的汇编，不过没有深究-我准备在我研究生的生涯中来学习这些底层非常基础的东西，现在先把那些基础都打好再说吧" class="headerlink" title="汇编也是我大二学期学习的,那段时间刚学过操作系统，对底层的东西产生了兴趣,之后就学了一段时间的汇编语言,当然看的是王爽老师的汇编原理的书.是很简单的那种.并没有涉及难的方面了。只是16位简单的汇编，不过没有深究,我准备在我研究生的生涯中来学习这些底层非常基础的东西，现在先把那些基础都打好再说吧"></a>汇编也是我大二学期学习的,那段时间刚学过操作系统，对底层的东西产生了兴趣,之后就学了一段时间的汇编语言,当然看的是王爽老师的汇编原理的书.是很简单的那种.并没有涉及难的方面了。只是16位简单的汇编，不过没有深究,我准备在我研究生的生涯中来学习这些底层非常基础的东西，现在先把那些基础都打好再说吧</h2><p>##原理内功<br>对于原理这一块，我还是很重视的，虽然我并不是很重视考试这种形式化的东西,基本上书上的知识我都知道.虽然很多联系不了实际现实的应用，但是我现在先记住，等到日后那个地方用到我再来复习一遍,那么印象就深刻一点了</p>
-<p>###1.编译原理<br>这个估计是我现在最好的一门了,因为我觉得这是我与实际联系起来的一门了,因为知识点不多，所以联系起来并不是太复杂了。也是因为有一系列的实践课程,所以之后联系起来就更加的简单了。</p>
-<p>但是老师课堂上讲的那些都是非常简单的知识点了,后面难的老师并没有进行讲解。所以后面的那些我估计我上了研究生才能自己学了玩,</p>
-<p>###2.计算机网络<br>计算机网络这块,说实话是我一直想要学的知识。所以我平时带着学的也很认真的.计网的知识点也是蛮多的。特别网络层那块,我感觉它的知识点已经赶上了物理层和数据链路层了.不过老师讲课的时候并没有和实际联系起来,但是她讲的原理的比喻还算不错的.这种讲法也是不错的.最起码我们的原理是懂了.</p>
-<p>对于计网。我最不懂的是那些各个层的设备了.因为没见过实物.没见过集线器和网桥长什么样子。路由器倒是见过,但是我不知道它是那一代的,我家的那个应该不是那些古老的路由器了</p>
-<p>###3.离散数学<br>这是我最不满意的一门了，离散数学一直是我们这种学科的基础学科,因而我一直很重视这门学科,一直都在慢慢的学习这门学科，这门学科老师讲的对我们这些小白不是太友好了,他的课基本上都是先要预习一遍才行，课堂上才能听得懂,因为老师的基础的概念那些东西都讲得很快,基本上都是一带而过的感觉。这个就让我无法理解了.那么下面基本上就是一种听不懂的感觉了</p>
-<p>离散数学考试的试卷很简单,但是我却做不出来了,重言式也搞不懂了,幺元和零元也搞不懂了.代数系统那边不懂还能理解了，因为那边我其实才复习了一半吧。就算元旦节出去玩三天也不能至于这样啊。能力还是太差了.不过我之后还是会继续学学的,毕竟这是基础，重点还是那些基础的概念什么的。</p>
-<p>菜的要命！！</p>
-<p>###4.操作系统<br>操作系统这块我的理论学的还算不错,但是要是具体到某个操作系统上，估计我就蒙了.书上讲的那些理论基本我都会，但是真正联系到实际的时候就有一点蒙了.操作系统天天和我们打交道.比如我写博客用的ubuntu，日常使用的windows。它们之间的差别我能理解一些.但是一到底层就不懂了。并且这俩个我都是很菜的.在学完书上的知识点后。我看了windows内核解析那一本书，可惜没有坚持的下来,因为实在是看不懂.就前面的第二章的综述我都很多很多的不懂,进度很慢很慢的。那个时候正好又要开始做网页什么的.然后就没有看多少.之后书就还了</p>
-<p>###5.数据库原理<br>数据库我一直没有太在意,只是老师一直和我们说很重要很重要的,因为现在都是数据啊,你要处理就要用数据库啊。我们学了SQL server和Oracle，但是我们没有学习mysql.</p>
-<p>之后我们用sql语句,也只是用的简单的查询和插入什么的，没用过什么难的,直到最近的javaweb实训我才发现很重要,实训我用的是三大框架来写的,其中的hibernate中的级联关系那块,那些用的就比较复杂了.各种连接就出现了,表与表之间的关联什么的,单向双向什么的,各种让人头大的东西也出现了，那时候我发现我有必要回头看看数据库这块的东西了</p>
-<hr>
-<p>##心中世界<br>曾经在知乎上看到这么一个问题,为什么我读的书越多，越看不起身边那些不读书的人?</p>
-<p>我一直很困惑为什么会有这样的体会,书读的越多，自身的积累就越多.看见的东西就越多.那么这个时候的你应该是越来越谦逊，因为你知道自己的不足在哪里，知道人外有人,知道自己的鄙视只是一种傻的表现.那为什么还会这样,那只是你的书读的太少太少了.你处于这一种中间的部分.书读的很少很少，但是却也读过一点点.心中有一种燕雀安知鸿鹄之志的感觉,但是你怎么不知道燕雀也许也是心藏大世界呢.</p>
-<p>我以前读书比较功利,对我没有用的我都不会去读它.我都是挑那些对自身有用的，当然历史除外，</p>
-<p>我读文学名著是为了和我女神聊天,她读书很多，为了她我读了许多名著,和她一起谈那些见解和体会,想想那段时间也是蛮快乐的呢</p>
-<p>我读心理学也是为了处理好我的人际关系这一块</p>
-<p>我读诗词歌赋也是为了和女神聊天,那个时候我们俩还辩论过一次呢,最后以我跑题为结束了</p>
-<p>专业书什么的,更不用说了,那就是为了之后的工作的</p>
-<p>他们说中国人喜欢情节的故事，我是中国人，也喜欢有情节的故事，我看过很多故事，这一年每天晚上从图书馆回来之后，我就会上床拿着手机看故事，以前女神推荐给我一个，后来手机内存不够的时候，很多应用都卸载了,因为要装我的背单词的软件。我看过很多类型的故事，看故事和看一个人的心理是一样的,什么样的人写出什么样的故事的，体会也会越来越多。</p>
-<p>到现在了，我看的书基本都是我想要看的了,没有那些功利心了,我觉得这很好.社会这么多功利的地方，不能让读书这块也变陈功利的地方了</p>
-<p>心境也随着这些东西改变而改变了，现在基本不怨天尤人了,都是靠自己，老师讲不好，自己下课去学习,自己要使用的,都是自己去学习.那年复读给我的帮助真的很大，在我学习方法上的帮助，在我学习态度上的等等,基本上在那年复读结束的时候,我基本形成了一套适合自己的学习的系统。</p>
-<p>总之一句话,承认自己比较笨,那就花更多的时间来学</p>
-<hr>
-<p>##在路上<br>这原本是我非常推崇的一本书的名字，我想和书中的主人公一样。</p>
-<p>我们学的还有很多。时间却很少了,现在的我已经是大三了,而且下个学期就是第二个学期了,我打算的就是考研.并不是为谁而考，为的都是自己，现在的本科生一抓一大把，完全没什么用。研究生才会保障一份基本的工作。我现在想要是南理工，我不知道我能不能考上，因为毕竟我感觉有点难啊。这个不是什么小打小闹的，我们学校的第一也只是南理工那个水平，那个时候我一次没有进过二本线的。</p>
-<p>但是我依然想去，想考进去。我觉得理工科的学生应该就进入那些理工科大学,而不是待在这个师范类学校，没什么前途啊，我有一年的时间来准备考研，我想这是一场更加艰难的战斗，因为没有气氛，没有战友，只有孤独陪伴着你，你只有一个人坚定的往前走，不松懈才能成功.</p>
-<p>这次我只想拼一把.</p>
-<p>##结语<br>2016年过去了，剩下的2017我想好好的努力努力，最起码不能像现在的自己那么的菜，虽然我这一年基本没出去玩过，都是在学习，但是显然大一大二的债我依然没有还清，我还要更加的努力才行，加油！！</p>
-<hr>
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link) { %>
+          <a class="article-more-a" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
+        <% } %>
+      <% } else { %>
+         <% if (!index && post.toc){ %>
+      <div id="toc" class="toc-article">
+      <strong class="toc-title">文章目录</strong>
+      <%- toc(post.content) %>
+      </div>
+    <% } %>
+        <%- post.content %>
+      <% } %>
 
-      
-
-      
+      <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
         <div class="page-reward">
           <a href="javascript:;" class="page-reward-btn tooltip-top">
             <div class="tooltip tooltip-east">
@@ -212,10 +168,20 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i><%= theme.reward_wording%><i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
-                    
-                    
+                    <% if(theme.alipay) {%>
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="<%= theme.alipay%>">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    <% } %>
+                    <% if(theme.weixin) {%>
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="<%= theme.weixin%>">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    <% } %>
                   </div>
                 </span>
               </span>
@@ -223,95 +189,63 @@
           </div>
           </a>
         </div>
-      
+      <% } %>
     </div>
     <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/年终总结/">年终总结</a></li></ul>
-	</div>
-
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
+      <%if(post.top){%>
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a>置顶</a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
+      <% } %>
+      <%- partial('post/tag') %>
+      <%- partial('post/category') %>
+      <% if (index && theme.show_all_link){ %>
+        <p class="article-more-link">
+          <a class="article-more-a" href="<%- url_for(post.path) %>"><%= theme.show_all_link %> >></a>
+        </p>
+      <% } %>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/01/06/年年岁岁-岁岁年年-2016年总结/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
+      <% if (!index && theme.share_jia){ %>
+        <%- partial('post/share') %>
+      <% } %>
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+<% if (!index){ %>
+  <%- partial('post/nav') %>
+<% } %>
 
-  
-<nav id="article-nav">
-  
-  
-    <a href="/2016/12/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
+<% if (!index && theme.share_addthis){ %>
+<%- partial('post/share_addthis') %>
+<% } %>
 
+<% if (!index && theme.duoshuo && post.comments){ %>
+<%- partial('post/duoshuo', {
+    key: post.slug,
+    title: post.title,
+    url: config.url+url_for(post.path)
+  }) %>
+<% } %>
 
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = '<%=config.disqus_shortname%>'; // required: replace example with your forum shortname
 
-
-
-
-
-
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+<% } %>
 
           </div>
         </div>
